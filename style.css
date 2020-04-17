@@ -12,9 +12,17 @@ ul h3{
   margin-bottom: 10px;
 
 }
-body{
-  margin: 0;
+a{
+  color: lightgreen;
+  text-decoration:none;
 }
+body{
+  background-color: black;
+  color : white;
+  margin: 0;
+
+}
+
 
 
 .container{
@@ -74,7 +82,4 @@ body{
   .list{
     text-align: left;
  }
-}
-a{
-  text-decoration: none;
 }
