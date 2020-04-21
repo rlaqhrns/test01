@@ -4,43 +4,23 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="homestyle.css">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='colors.js'></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="passwordcheck.js">
 
-</head>
+    </script>
+
+   <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+ </head>
 <body>
   <div class ='container'>
     <div class = 'head'>
     <h1><strong><a href="home.html">WiKi</a></strong></h1>
     </div>
     <div class = 'button'>
-    <input type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value='day';
-
-    var alist = document.querySelectorAll('a');
-  var i=0;
-  while(i<alist.length){
-
-  alist[i].style.color = 'lightgreen';
-  i=i+1;
-  }
-  }
-    else{
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      this.value='night';
-      var alist = document.querySelectorAll('a');
-  var i=0;
-  while(i<alist.length){
-
-  alist[i].style.color = 'blue';
-  i=i+1;
-  }
-    }
-    ">
-  </div>
+      <input type="button" value="day" onclick="nightdayhandler(this);">
+    </div>
     <div class = 'list'>
     <ul text-align='center'>
       <h3>목차</h3>
@@ -51,7 +31,7 @@
       <li><a href="rabbit.html">rabbit</a><br></li>
       <li><a href="cow.html">cow</a><br></li>
     </ul>
-  </div>
+    </div>
     <div class="Search">
       <form action="/action_page.php">
         <label for="fname">Search:</label>
@@ -60,6 +40,19 @@
       </form>
 
     </div>
+    <div class="login">
+      <form>
+        <label for="fname">ID:</label>
+        <input type="text" placeholder="ID를 입력하시오." name="ID">
+        <label for="password">PW:</label>
+        <input type="password" id="password_1" class="pw" name="PW" placeholder="비밀번호">
+        <label for="password">PWCheck:</label>
+        <input type="password" id="password_2" class="pw" name="PW" placeholder="비밀번호 확인">
+        <input type="button" name="login" value="login" onclick="compare()">
+      </form>
+
+    </div>
+
 
   <div class ='content'>
 <p>

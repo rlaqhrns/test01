@@ -3,9 +3,10 @@
 
 .container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 150px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 170px;
   grid-template-areas:
   'header header header header header button'
+  'header header header header header login'
   'Search Search Search Search Search list'
   'content content content content content list';
 }
@@ -21,10 +22,16 @@
 }
 .head h1{margin-bottom: 0;}
 .button{
-  text-align: center;
-  padding: 90px 0 0 0;
+  text-align: right;
+  padding: 90px 20px 0 0;
 
   grid-area: button;
+}
+.login{
+  padding-left: 20px;
+  width: 0px;
+  grid-area: login;
+
 }
 .content{
   grid-area: content;
