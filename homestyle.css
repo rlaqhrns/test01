@@ -3,7 +3,7 @@
 
 .container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 170px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 200px;
   grid-template-areas:
   'header header header header header button'
   'header header header header header login'
@@ -34,6 +34,7 @@
 
 }
 .content{
+  text-align: center;
   grid-area: content;
 
 
@@ -50,6 +51,7 @@
 
 
 .Search{
+
   border-right: 1px gray solid;
 
   padding: 15px;
